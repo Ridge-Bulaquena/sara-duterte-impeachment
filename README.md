@@ -1,73 +1,123 @@
-# Welcome to your Lovable project
+🧭 Overview
 
-## Project info
+A serious, scholarly, and accessible platform analyzing the 2025 impeachment of Vice President Sara Duterte. This repository supports the front-end and content of a static website designed to engage readers across legal, political, and cultural sectors.
 
-**URL**: https://lovable.dev/projects/16cfbf61-5957-4703-ade6-1a3c9167f1c8
+📚 Project Structure
 
-## How can I edit this code?
+1. The Agora (Homepage)
 
-There are several ways of editing your application.
+Revo Slider with 7 slides
 
-**Use Lovable**
+Countdown & trial snapshot
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/16cfbf61-5957-4703-ade6-1a3c9167f1c8) and start prompting.
+News ticker strip
 
-Changes made via Lovable will be committed automatically to this repo.
+Pro/Anti featured article grid
 
-**Use your preferred IDE**
+Popover glossary teaser
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Section teasers for deeper exploration
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Social wall, timeline, memorabilia downloads
 
-Follow these steps:
+2. Bill of Particulars (Articles of Impeachment)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Article breakdown with summaries, evidence, and legal context
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. The War Room (Trial Tracker)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Calendar, senate profiles, voting visualizations, transcripts, and document archive
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+4. The Orator’s Stage (Legal Commentary)
 
-**Edit a file directly in GitHub**
+Long-form essays, scholarly hub, and submission portal
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+5. The Dossier (Legal Explainers)
 
-**Use GitHub Codespaces**
+“Impeachment 101,” case studies, visual charts, dictionary tools
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+6. The Scriptorium (Latin Lexicon)
 
-## What technologies are used for this project?
+Live-searchable glossary with contextual references
 
-This project is built with:
+7. The Dueling Podium (Opinion & Debate)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Toggle-style pro/con commentary with celeb guests and public voices
 
-## How can I deploy this project?
+8. Courtroom Visuals (Design & Gallery)
 
-Simply open [Lovable](https://lovable.dev/projects/16cfbf61-5957-4703-ade6-1a3c9167f1c8) and click on Share -> Publish.
+Art, infographics, designer’s blog, meme archive, and animation showroom
 
-## Can I connect a custom domain to my Lovable project?
+9. Meta / Bonus Pages
 
-Yes, you can!
+Quizzes, townhalls, multilingual toggle, highlight reels
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🎯 Audience
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Sara Duterte supporters
+
+Senators, judges, and analysts
+
+Law students and JDs
+
+Gossip-loving pop culture followers
+
+Supreme Court observers
+
+Visual designers and web aesthetes
+
+🎨 Design System
+
+Headings: Blacker Display (Medium, Italic, Light, Bold)
+
+Body: Figtree
+
+Colors
+
+#2D3748 Deep Slate Base
+
+#b5a58a Muted Gold 1
+
+#8c7b5e Muted Gold 2
+
+#6e5d3f Deep Gold
+
+#c4bba9 Light Tan Background
+
+#F7FAFC Off-White
+
+#4A5568 Soft Slate Blue
+
+#A0AEC0 Divider Gray
+
+#6B1F1F Highlight Crimson
+
+🚀 Deployment Plan
+
+Framework: Astro or Next.js
+
+Backend: Firebase or Hasura (optional)
+
+Optimization: Static-first, responsive, low-bandwidth ready
+
+📁 /docs Includes
+
+Design tokens & font setup
+
+Hero storyboard
+
+Glossary spreadsheet
+
+Legal references
+
+Audience persona maps
+
+API schema (optional)
+
+⚖️ License
+
+MIT — Open access and attribution required for reuse.
+
+📬 Contact
+
+Want to contribute, suggest resources, or critique the constitutional basis of an article? Submit an issue or open a pull request.
