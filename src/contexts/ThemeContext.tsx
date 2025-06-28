@@ -10,9 +10,20 @@ interface ThemeSettings {
   headerStyle: 'default' | 'centered' | 'split';
   fontSize: number;
   fontFamily: string;
+  headingFont: string;
   headerHeight: number;
   containerWidth: number;
   borderRadius: number;
+  // Sara Duterte Impeachment Hub specific colors
+  deepSlateBase: string;
+  mutedGold1: string;
+  mutedGold2: string;
+  deepGold: string;
+  lightTan: string;
+  offWhite: string;
+  softSlateBlue: string;
+  dividerGray: string;
+  highlightCrimson: string;
 }
 
 interface ThemeContextType {
@@ -21,17 +32,28 @@ interface ThemeContextType {
 }
 
 const defaultSettings: ThemeSettings = {
-  siteName: 'Kadence Crafted',
-  primaryColor: '#3B82F6',
-  secondaryColor: '#1E40AF',
-  backgroundColor: '#FFFFFF',
-  textColor: '#1F2937',
+  siteName: 'Sara Duterte Impeachment Hub',
+  primaryColor: '#2D3748', // Deep Slate Base
+  secondaryColor: '#b5a58a', // Muted Gold 1
+  backgroundColor: '#F7FAFC', // Off-White
+  textColor: '#2D3748', // Deep Slate Base
   headerStyle: 'default',
   fontSize: 16,
-  fontFamily: 'Inter',
+  fontFamily: 'Figtree',
+  headingFont: 'Blacker Display',
   headerHeight: 80,
   containerWidth: 1200,
-  borderRadius: 8,
+  borderRadius: 4,
+  // Sara Duterte Impeachment Hub colors
+  deepSlateBase: '#2D3748',
+  mutedGold1: '#b5a58a',
+  mutedGold2: '#8c7b5e',
+  deepGold: '#6e5d3f',
+  lightTan: '#c4bba9',
+  offWhite: '#F7FAFC',
+  softSlateBlue: '#4A5568',
+  dividerGray: '#A0AEC0',
+  highlightCrimson: '#6B1F1F',
 };
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
