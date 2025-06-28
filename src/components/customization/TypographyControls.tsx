@@ -9,11 +9,16 @@ export const TypographyControls = () => {
   const { settings, updateSettings } = useTheme();
 
   const fontFamilies = [
+    { value: 'Figtree', label: 'Figtree (Body)' },
     { value: 'Inter', label: 'Inter' },
     { value: 'Roboto', label: 'Roboto' },
     { value: 'Open Sans', label: 'Open Sans' },
+  ];
+
+  const headingFonts = [
+    { value: 'Playfair Display', label: 'Playfair Display (Scholarly)' },
+    { value: 'Blacker Display', label: 'Blacker Display (Premium)' },
     { value: 'Lora', label: 'Lora' },
-    { value: 'Playfair Display', label: 'Playfair Display' },
     { value: 'Montserrat', label: 'Montserrat' },
   ];
 
@@ -25,13 +30,32 @@ export const TypographyControls = () => {
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">
-            <Label className="text-xs font-medium">Font Family</Label>
+            <Label className="text-xs font-medium">Heading Font</Label>
+            <Select
+              value={settings.headingFont}
+              onValueChange={(value) => updateSettings({ headingFont: value })}
+            >
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Select heading font" />
+              </SelectTrigger>
+              <SelectContent>
+                {headingFonts.map((font) => (
+                  <SelectItem key={font.value} value={font.value}>
+                    {font.label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="space-y-2">
+            <Label className="text-xs font-medium">Body Font</Label>
             <Select
               value={settings.fontFamily}
               onValueChange={(value) => updateSettings({ fontFamily: value })}
             >
               <SelectTrigger className="w-full">
-                <SelectValue placeholder="Select font family" />
+                <SelectValue placeholder="Select body font" />
               </SelectTrigger>
               <SelectContent>
                 {fontFamilies.map((font) => (
@@ -50,8 +74,8 @@ export const TypographyControls = () => {
             <Slider
               value={[settings.fontSize]}
               onValueChange={(value) => updateSettings({ fontSize: value[0] })}
-              min={12}
-              max={24}
+              min={14}
+              max={20}
               step={1}
               className="w-full"
             />

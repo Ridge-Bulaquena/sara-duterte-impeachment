@@ -21,7 +21,7 @@ export const HeaderControls = () => {
             <Input
               value={settings.siteName}
               onChange={(e) => updateSettings({ siteName: e.target.value })}
-              placeholder="Enter site name"
+              placeholder="Sara Duterte Impeachment Hub"
               className="w-full"
             />
           </div>
@@ -36,15 +36,15 @@ export const HeaderControls = () => {
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="default" id="default" />
-                <Label htmlFor="default" className="text-xs">Default</Label>
+                <Label htmlFor="default" className="text-xs">Professional (Government Style)</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="centered" id="centered" />
-                <Label htmlFor="centered" className="text-xs">Centered</Label>
+                <Label htmlFor="centered" className="text-xs">Centered (Academic)</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="split" id="split" />
-                <Label htmlFor="split" className="text-xs">Split</Label>
+                <Label htmlFor="split" className="text-xs">Split Layout</Label>
               </div>
             </RadioGroup>
           </div>
