@@ -10,6 +10,7 @@
 		"colord": "^2.9.3",
 		"dompurify": "^2.3.4",
 		"gradient-parser": "^0.1.5",
+		"lovable-tagger": "^1.1.8",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
 		"react-color": "^2.18.1",
