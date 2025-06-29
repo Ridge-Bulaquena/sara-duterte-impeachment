@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 modules = ["php-8.2", "nodejs-20", "web"]
 run = "node index.js"
 
@@ -6,3 +7,8 @@ channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "node index.js"]
+=======
+run = "npm run dev"
+language = "nodejs"
+entrypoint = "index.js"
+>>>>>>> 3a7ec3c520b19a0ea821650a250822e4a65e7a3d
